@@ -9,32 +9,22 @@ namespace YFModel
     public class User
     {
         private int id;
-        public int Id
-        {
-            get { return Id; }
-            set { Id = value; }
-        }
+        public int Id { get => id; set => id = value; }
+
         private string username;
-        public string Username
-        {
-            get { return username; }
-            set { username = value; }
-        }
+        public string Username { get => username; set => username = value; }
 
         private string password;
         public string Password { get => password; set => password = value; }
 
         private string name;
-        public string Name { get => password; set => password = value; }
-
+        public string Name { get => name; set => name = value; }
 
         private string address;
         public string Address { get => address; set => address = value; }
 
-
         private int sex;
         public int Sex { get => sex; set => sex = value; }
-        
         
         private string mobile;
         public string Mobile { get => mobile; set => mobile = value; }
@@ -48,9 +38,9 @@ namespace YFModel
         private int state;
         public int State { get => state; set => state = value; }
         
-
         private DateTime adddate;
         public DateTime Adddate { get => adddate; set => adddate = value; }
+        
         
     }
 }
