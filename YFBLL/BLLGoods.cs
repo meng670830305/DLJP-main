@@ -21,6 +21,10 @@ namespace YFBLL
             return YFDAL.DALGoods.List();
         }
 
+        public static YFModel.Goods GetGoods(int id)
+        {
+            return YFDAL.DALGoods.GetGoods(id);
+        }
 
 
 

@@ -75,5 +75,19 @@ namespace YFDAL
             }
             return list;
         }
+
+        public static YFModel.Goods GetGoods(int id)
+        {
+            StringBuilder strsql = new StringBuilder();
+            strsql.Append("SELECT * ");
+            strsql.Append("FROM t_goods ");
+            strsql.Append("WHERE  ");
+            strsql.AppendFormat("id={0}", id);
+            DataTable dt = new DataTable();
+            dt = YFUtility.YFMsSqlHelper.Query(strsql.ToString()).Tables[0];
+            List<YFModel.Goods> list = Dttolist(dt);
+            return list[0];
+        }
+
     }
 }
